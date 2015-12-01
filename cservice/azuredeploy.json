@@ -106,14 +106,13 @@
           "count": "[parameters('masterCount')]",
           "dnsPrefix": "[parameters('managementEndpointDNSNamePrefix')]"
         },
-        "agentPoolProfiles": [
+        "agentPoolProfiles": 
           {
             "name": "agentpools",
             "count": "[parameters('agentCount')]",
             "vmSize": "[parameters('agentVMSize')]",
             "dnsPrefix": "[parameters('applicationEndpointDNSNamePrefix')]"
-          }
-        ],
+          },
         "osProfile": {
           "adminUsername": "[parameters('adminUsername')]",
           "adminPassword": "[parameters('adminPassword')]",
